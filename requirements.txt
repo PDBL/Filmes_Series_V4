@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+httpx
+mysql-connector-python
+
+# python -m uvicorn main:app --reload

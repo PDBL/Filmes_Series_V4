@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Filmes e Séries</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Filmes e Séries</h1>
+
+        <p>Séries disponíveis na nossa base de dados</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="pesquisa">
+
+            <input type="text" id="pesquisa" placeholder="Pesquisar por nome...">
+
+            <select id="genero">
+
+                <option value="">Todos os géneros</option>
+
+            </select>
+
+            <button onclick="pesquisarSeries()">Pesquisar</button>
+
+        </section>
+
+
+        <section id="mensagem"></section>
+
+
+        <section id="series" class="series-grid"></section>
+
+    </main>
+
+
+    <div id="modal" class="modal escondido">
+
+        <div class="modal-conteudo">
+
+            <button class="fechar" onclick="fecharDetalhes()">×</button>
+
+            <div id="detalhes"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
